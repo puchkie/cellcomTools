@@ -17,11 +17,7 @@
      overflow: auto;
  }
  .wrapper {
-     display: grid;
-     grid-template-columns: 1fr 1fr 1fr;
     margin: 200px;
-    column-gap: 5%;
-    row-gap: 10%;
  }
  .gradient-border {
    --border-width: 3px;
@@ -34,7 +30,7 @@
    color: #FBFAF5;
    background: #FBFAF5;
    border-radius: var(--border-width);
-   transition: transform .3s; /* Animation */
+   transition: transform .3s;
  }
  .gradient-border::after {
    position: absolute;
@@ -73,3 +69,18 @@
      display: block;
      /* margin: 20px auto 5px; */
  }
+ ul {
+  column-count: 3;
+}
+li{
+  display: inline-block;
+  width: 90%;
+  margin: 20px;
+}
+
+.placeholder{
+  display: inline-block;
+  width: 80%;
+  margin: 20px;
+  background-color: #a65ff2;
+}

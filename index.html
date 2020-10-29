@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <title>Cellcom Tools</title>
     <link rel="stylesheet" href="css/main.css">    
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -13,6 +14,7 @@
 </head>
 
 <body>
+   <div class="mCustomScrollbar" data-mcs-theme="dark">
     <div class="header" id="myHeader">
           <h1>תמיכה טכנית קו ראשון</h1>
         </div>
@@ -87,6 +89,8 @@
     <div>
        <p class="credit">Made by Roei Levi</p>
     </div>
+   </div>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script>
       $( function() {
         $( "#sortable" ).sortable({
@@ -97,7 +101,17 @@
         });
         $( "#sortable" ).disableSelection();
       } );
-      
       </script>
+      <script>
+         (function($){
+             $(window).on("load",function(){
+                 $("body").mCustomScrollbar({
+                  theme:"dark-thick",
+                  scrollInertia: 1200,
+                  autoDraggerLength:true,
+                 });
+             });
+         })(jQuery);
+     </script>
  </body>
 </html>

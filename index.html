@@ -7,6 +7,7 @@
     <title>Cellcom Tools</title>
     <link rel="stylesheet" href="css/main.css">    
     <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -15,10 +16,12 @@
 
 <body>
    <div class="mCustomScrollbar" data-mcs-theme="dark">
-    <div class="header" id="myHeader">
-          <h1>תמיכה טכנית קו ראשון</h1>
+    <div class="header">
+      <a href="https://email.cellcom.co.il/owa/#path=/mail/inbox" target="_blank">
+         <img src=img/outlook.png></a>
+          <h1>Cellcom Tools - Support Agent</h1>
         </div>
-        
+
     <div class="wrapper">
        <ul id="sortable">
           
@@ -67,21 +70,18 @@
             <img id="corpPhoto" src=img/Mail2cast.png></a>
        </li>
        <li class="ui-state-default">   
-          <a href="http://breaktable/Default.aspx" target="_blank" class="gradient-border">
-             <img id="corpPhoto" src=img/Break.png></a>
-        </li>   
-        <li class="ui-state-default">   
-         <a href="http://unifiedsupport/?uid=" target="_blank" class="gradient-border">
-            <img id="corpPhoto" src=img/Break.png></a>
-       </li> 
-       <li class="ui-state-default">   
-         <a href="https://iptego/me/" target="_blank" class="gradient-border">
-            <img id="corpPhoto" src=img/Break.png></a>
-       </li> 
-       <li class="ui-state-default">   
-         <a href="https://iptego/me/" target="_blank" class="gradient-border">
-            <img id="corpPhoto" src=img/Break.png></a>
-       </li>
+          <a href="http://unifiedsupport/?uid=" target="_blank" class="gradient-border">
+            <img id="corpPhoto" src=img/Unifiedsupport.png></a>
+         </li> 
+         <li class="ui-state-default">   
+            <a href="https://iptego/me/" target="_blank" class="gradient-border">
+               <img id="corpPhoto" src=img/IPTEGO.png></a>
+            </li> 
+         <li class="ui-state-default">   
+            <a href="http://breaktable/Default.aspx" target="_blank" class="gradient-border">
+               <img id="corpPhoto" src=img/Break.png></a>
+            </li>   
+
 
       </ul>
       </div>
@@ -97,7 +97,8 @@
           placeholder: "placeholder",
           forcePlaceholderSize: true,
           scroll: true,
-          tolerance: "pointer"
+          tolerance: "pointer",
+          revert: 250
         });
         $( "#sortable" ).disableSelection();
       } );

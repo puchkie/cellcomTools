@@ -23,7 +23,15 @@
      font-family: 'Montserrat';
  }
  .wrapper {
-    margin: 200px;
+  margin-top: 150px;
+ }
+ .category {
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 50px;
+  padding: 20px;
+  border: 3px solid var(--pink);
+  border-radius: 12px;
  }
  .header{
    height: 60px;
@@ -49,6 +57,12 @@
   float: left;
   top: 8px;
   left: 10px;
+}
+.catHeader{
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: -10px;
+  text-decoration: underline
 }
 
  .gradient-border {
@@ -84,12 +98,15 @@
      /* margin: 20px auto 5px; */
  }
  ul {
-  column-count: 3;
+  display: flex;
+  text-align: center;
+  margin-left: 20px;
 }
 li{
-  display: inline-block;
   width: 90%;
+  max-width: 400px;
   margin: 20px;
+  text-align: center;
 }
 
 .placeholder{

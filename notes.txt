@@ -3,3 +3,10 @@
 שוס בזק - 037278074
 
 בזק משווקים - 037278061
+
+
+TODO:
+Add Support Numbers
+make contact list
+Add Mashov btn
+add crm btn

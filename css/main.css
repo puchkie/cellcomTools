@@ -24,6 +24,7 @@
  }
  .wrapper {
   margin-top: 150px;
+  max-width: inherit;
  }
  .category {
   margin-left: 200px;
@@ -92,7 +93,8 @@
      font-size: 0.7rem;
  }
  #corpPhoto {
-     width: 200px;
+     max-width: 200px;
+     width: auto;
      height: auto;
      display: block;
      /* margin: 20px auto 5px; */
@@ -109,25 +111,3 @@ li{
   text-align: center;
 }
 
-.placeholder{
-  display: inline-block;
-  width: 80%;
-  margin: 20px;
-  border: 3px solid var(--pink);
-  border-radius: 6px;
-  background-color: rgba(242, 95, 208, 0.5);
-  opacity: 1;
-  animation-name: fadeInOpacity;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-duration: 0.3s;
-  }
-  
-  @keyframes fadeInOpacity {
-    0% {
-      opacity: 0.3;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
